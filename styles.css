@@ -87,3 +87,48 @@ table.table-bordered {
   transform: translate(-50%, -50%);
   margin: 0 auto;
 }
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: #ff9c6b;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #404baa;
+}
+
+.footer {
+  background: #f1c5f7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  text-align: center;
+  background: #7572db;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f1c5f7;
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+  .main {
+    order: 2;
+  }
+  .footer {
+    order: 3;
+  }
+}

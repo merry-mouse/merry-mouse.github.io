@@ -1,77 +1,124 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta name="viewport" content="initial-scale=1, width=device-width">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-        <link href="styles.css" rel="stylesheet">
-        <title>Projects</title>
-    </head>
-    <body>
-        <button class="homeGear" onclick="window.open('index.html','_self')"><img class="gear" src="orangeGear2.png"/>Home</button>
-        <div class="home-intro">
-        <div  class="intro_text">Projects</div>
-        </div>
-        <div class="table-info">
-        <table class="table table-bordered">
-  <thead>
-    <tr>
-      <th scope="col">Project</th>
-      <th scope="col">How it works</th>
-      <th scope="col">Git repository</th>
-    </tr>
-  </thead>
-  <tbody class="table-group-divider">
-    <tr>
-      <td>Python webscraper that checks availability of football tickets and notify when it is available for
-purchase via email
-</td>
-      <td>This program checs HTML content of the webpage with football tickets. If the ticket you want is there and is available to buy you will recieve a reminder on your email.
-        Program uses 2 libraries: Requests_HTML and Beautiful Soup.
-      </td>
-      <td><a class="nav-link" href="https://github.com/merry-mouse/python_web_scraping_checking_tickets">python_web_scraping_checking_tickets</a></td>
-    </td></tr>
-    <tr>
-      <td>Python program that delete expired or unavailable items from my liked items list on Zalando
-</td>
-      <td>This small Python program was created to automate a process of deleting expired and sold out items from Zalando personal account.
-        Made with Selenium and Regular Expressions frameworks. </td>
-      <td><a class="nav-link" href="https://github.com/merry-mouse/deleting_expired_items_from_zalando_liked_list">deleting_expired_items_from_zalando_liked_list</a></td>
-    </td></tr>
-    <tr>
-      <td> Apartment price prediction using Python Web Scraping and linear regression algorithm
-</td>
-      <td>Using web scraping and simple linear regression algorithm, this program can predict price of an apartment by it's size in square meters.
-         Written in Jupyter Notebook and uses Selenium, Regular Expressions, Pandas and Requests frameworks.</td>
-      <td><a class="nav-link" href="https://github.com/merry-mouse/apartments_price_prediction">apartments_price_prediction</a></td>
-    </td></tr>
-     <tr>
-      <td>Python program that models forensic investigation and finds a suspect who's DNA matches the one on the crime scene
-</td>
-      <td>Program reads two txt files. One of them is a DNA database with the count of Short Tandem Repeats (STRs) in DNA of each person.
-        Another one is a sequence of DNA from the crime scene. The program takes a sequence of DNA and a CSV file containing STR counts
-        for a list of individuals and then output to whom the DNA (most likely) belongs. Written with csv and sys libraries.</td>
-      <td><a class="nav-link" href="#">private repository</a></td>
-    </td></tr>
-    <tr>
-      <td>Python Linkedin webscraper that saves the most important info about job offers into a .csv file
-
-</td>
-      <td>This code allows to scrape some basic information about job offers on Linkedin.
-        Resulting info first stored in separated lists and then in a dictionary and then saved to a csv file.
-      Written with Pandas, Selenium and Time libraries.</td>
-      <td><a class="nav-link" href="https://github.com/merry-mouse/Linkedin_Webscraping">Linkedin_Webscraping</a></td>
-    </td></tr>
-    <tr>
-      <td>Python program that shows what tree you are according to your features</td>
-      <td>It is a small Python game that shows what tree a user could be according to his/her answers.
-         It asks a few questions about user's personality and physical features and shows a picture of a tree according to the answers.
-        Written with PIL (Pillow) and time libraries.</td>
-      <td><a class="nav-link" href="https://github.com/merry-mouse/What_tree_areU">What_tree_areU</a></td>
-    </td></tr>
-  </tbody>
-</table>
-</div>
-    </body>
+  <head>
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+    <link href="styles.css" rel="stylesheet" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <button class="homeGear" onclick="window.open('index.html','_self')">
+      <img class="gear" src="orangeGear2.png" />Home
+    </button>
+    <div class="home-intro">
+      <div class="intro_text">Projects</div>
+    </div>
+    <div class="wrapper">
+      <header class="header">
+        Python webscraper that checks availability of football tickets and
+        notify when it is available for purchase via email
+      </header>
+      <article class="main">
+        <p>
+          This program checks HTML content of the webpage with football tickets.
+          If the ticket you want is there and is available to buy you will
+          recieve a reminder on your email. Program uses 2 libraries:
+          Requests_HTML and Beautiful Soup.
+        </p>
+      </article>
+      <footer class="footer">
+        <a
+          href="https://github.com/merry-mouse/python_web_scraping_checking_tickets"
+          >python_web_scraping_checking_tickets</a
+        >
+      </footer>
+    </div>
+    <div class="wrapper">
+      <header class="header">
+        Python program that delete expired or unavailable items from my liked
+        items list on Zalando
+      </header>
+      <article class="main">
+        <p>
+          This small Python program was created to automate a process of
+          deleting expired and sold out items from Zalando personal account.
+          Made with Selenium and Regular Expressions frameworks.
+        </p>
+      </article>
+      <footer class="footer">
+        <a
+          href="https://github.com/merry-mouse/deleting_expired_items_from_zalando_liked_list"
+          >deleting_expired_items_from_zalando_liked_list</a
+        >
+      </footer>
+    </div>
+    <div class="wrapper">
+      <header class="header">
+        Apartment price prediction using Python Web Scraping and linear
+        regression algorithm
+      </header>
+      <article class="main">
+        <p>
+          Using web scraping and simple linear regression algorithm, this
+          program can predict price of an apartment by it's size in square
+          meters. Written in Jupyter Notebook and uses Selenium, Regular
+          Expressions, Pandas and Requests frameworks.
+        </p>
+      </article>
+      <footer class="footer">
+        <a href="https://github.com/merry-mouse/apartments_price_prediction"
+          >apartments_price_prediction
+        </a>
+      </footer>
+    </div>
+    <div class="wrapper">
+      <header class="header">
+        Python program that models forensic investigation and finds a suspect
+        who's DNA matches the one on the crime scene
+      </header>
+      <article class="main">
+        <p>
+          Program reads two txt files. One of them is a DNA database with the
+          count of Short Tandem Repeats (STRs) in DNA of each person. Another
+          one is a sequence of DNA from the crime scene. The program takes a
+          sequence of DNA and a CSV file containing STR counts for a list of
+          individuals and then output to whom the DNA (most likely) belongs.
+          Written with csv and sys libraries.
+        </p>
+      </article>
+      <footer class="footer">
+        <a href="#">private repository</a>
+      </footer>
+    </div>
+    <div class="wrapper">
+      <header class="header">
+        Python program that shows what tree you are according to your features
+      </header>
+      <article class="main">
+        <p>
+          It is a small Python game that shows what tree a user could be
+          according to his/her answers. It asks a few questions about user's
+          personality and physical features and shows a picture of a tree
+          according to the answers. Written with PIL (Pillow) and time
+          libraries.
+        </p>
+      </article>
+      <footer class="footer">
+        <a href="https://github.com/merry-mouse/What_tree_areU"
+          >What_tree_areU</a
+        >
+      </footer>
+    </div>
+  </body>
 </html>
