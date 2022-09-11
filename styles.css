@@ -2,7 +2,7 @@ body {
   background-color: #8189d9;
 }
 
-.gear {
+.home {
   width: 50px;
   display: block;
   margin: 20px;
@@ -52,7 +52,7 @@ body {
 .logo {
   width: 30px;
 }
-.homeGear {
+.home_icon {
   background-color: transparent;
   border: none;
   color: #f1c5f7;
