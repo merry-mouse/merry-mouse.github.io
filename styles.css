@@ -45,13 +45,11 @@ ul {
 .names {
   color: #ff9c6b;
 }
-.ana_drawing {
-  border-radius: 200px;
-  width: 150px;
+.gadget_drawing {
+  width: 250px;
   display: inline-block;
   margin: auto;
   padding: 0px;
-  border: 5px solid #f887f4;
 }
 .contacts-box {
   margin: 100px 0 0 0;
@@ -91,7 +89,7 @@ table.table-bordered {
   color: #f1c5f7;
 }
 .homepageEnd {
-  position: fixed;
+  position: absolute;
   left: 50%;
   bottom: 10px;
   transform: translate(-50%, -50%);
