@@ -81,7 +81,7 @@ p {
   color: #f1c5f7;
   margin: 30px 10px 30px 10px;
   font-family: Comic Sans MS, Comic Sans, cursive;
-  font-size: 20px;
+  font-size: 30px;
 }
 .general-text {
   margin: auto;
@@ -90,7 +90,8 @@ p {
   font-size: 20px;
 }
 .certificate {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   margin: 10px 0 40px 0;
 }
 .table-info {
