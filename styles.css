@@ -10,6 +10,11 @@ body {
   bottom: 0;
   overflow: auto;
   box-shadow: 20px 10px 20px #131c5e;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 ul {
   font-family: Comic Sans MS, Comic Sans, cursive;
@@ -147,7 +152,9 @@ table.table-bordered {
   color: #f1c5f7;
 }
 
-@media all and (min-width: 800px) {
+@media all and (max-width: 800px) {
+    width: ;
+  }
   .main {
     flex: 3 0px;
   }
