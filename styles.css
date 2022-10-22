@@ -10,17 +10,17 @@ body {
   bottom: 0;
   overflow: auto;
   box-shadow: 20px 10px 20px #131c5e;
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
-.container::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+.container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 ul {
   font-family: Comic Sans MS, Comic Sans, cursive;
   letter-spacing: 0.2rem;
   font-weight: 400;
-  -webkit-text-stroke: 1px #ff9c6b;
+  -webkit-text-stroke: 1px;
 }
 
 .home {
@@ -145,8 +145,6 @@ table.table-bordered {
 }
 
 @media all and (max-width: 800px) {
-    width: ;
-  }
   .main {
     flex: 3 0px;
   }
@@ -181,4 +179,48 @@ h2 {
   letter-spacing: 0.1rem;
   font-weight: 600;
   font-size: 30px;
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-evenly;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: #f1c5f7;
+  padding: 5px;
+  width: 400px;
+  height: 500px;
+  margin-top: 10px;
+  line-height: 150px;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  border-radius: 5%;
+}
+.flex-item img {
+  margin-top: 10px;
+  height: 60%;
+  width: 93%;
+  border-radius: 5%;
+}
+.flex-item .project_text {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 30px;
+  color: #7572db;
 }
