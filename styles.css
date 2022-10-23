@@ -212,9 +212,7 @@ h2 {
   text-align: center;
   border-radius: 5%;
 }
-.flex-item:hover {
-  background-color: #ff11ff;
-}
+
 .flex-item .img_container {
   height: 50%;
   width: 100%;
