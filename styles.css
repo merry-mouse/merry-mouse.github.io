@@ -224,7 +224,7 @@ h2 {
   background-position: center;
 }
 .flex-item .project_text {
-  margin-top: 20px;
+  margin-top: 40px;
   font-family: Comic Sans MS, Comic Sans, cursive;
   font-size: 20px;
   color: #7572db;
@@ -240,9 +240,13 @@ button {
   top: 50%;
   margin-top: -25px;
   margin-left: -25px;
+  transition: transform 300ms;
 }
 button img {
   width: 50px;
   height: 50px;
   vertical-align: top;
+}
+button:hover {
+  transform: scale(1.2);
 }
